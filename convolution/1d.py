@@ -25,7 +25,7 @@ def convolution(y, kernel):
 def main():
     x, y = v_function()
 
-    kernel = [-0.2, 0.2, 0.2, 0.2, 0.4]
+    kernel = [0.2, 0.2, 0.2, 0.2, 0.2]
 
     v_convoluted_1 = convolution(y, kernel)
     v_convoluted_2 = convolution(v_convoluted_1, kernel)
