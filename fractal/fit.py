@@ -35,7 +35,7 @@ def main():
     for _ in range(1000):
         n = random.randint(0, len(x) - 2)
 
-        a, e, c, f = coefficients[n]
+        a, e, c, f = get_coefficients(n, scales[n - 1](point[0]), x, y)
         point = (a * point[0] + e, c * point[0] + scales[n](point[0]) * point[1] + f)
 
         plt.plot(*point, '.', markersize=1)
